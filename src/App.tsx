@@ -13,6 +13,7 @@ import Button from "./components/Button";
 import ChildComponent from "./components/ChildComponent";
 import Input from "./components/Input";
 import Css from "./components/Css";
+import States from "./components/States/States";
 
 function App() {
   const [value, setValue] = useState<number>(0);
@@ -77,6 +78,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <States />
         {/* pssing events as props to a component */}
         <Button
           handleClick={(event, id) => {
@@ -102,14 +104,14 @@ function App() {
         </Oscar>
 
         <Css styles={{ border: "1px solid white", padding: "1rem" }} />
-        <Inner data={value} other="sandip" name={personName} res={resp} />
+        {/* <Inner data={value} other="sandip" name={personName} res={resp} /> */}
 
-        <Simplest
+        {/* <Simplest
           name={"Paglu"}
           lname={"Dance Dance"}
           names={personName}
           res={resp}
-        />
+        /> */}
       </header>
     </div>
   );
