@@ -14,11 +14,15 @@ import ChildComponent from "./components/ChildComponent";
 import Input from "./components/Input";
 import Css from "./components/Css";
 import States from "./components/States/States";
+import useSandip from "./components/Hooks/useSandip";
+import UseReducer from "./components/UseReducer";
 
 function App() {
   const [value, setValue] = useState<number>(0);
   const [resp, setResp] = useState<[] | null>([]);
   const [name, setName] = useState<string>("sandip");
+
+  const [count, increment, decremet] = useSandip(5);
 
   const personName = {
     fname: "Will",
@@ -78,6 +82,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div style={{ border: "1px solid yellow" }}>
+          useSandip hook used
+          <div>Count value {count}</div>
+          <div>
+            <button onClick={increment}>Increment</button>
+          </div>
+          <div>
+            <button onClick={decremet}>Decrement</button>
+          </div>
+        </div>
+
+        <UseReducer />
+
         <States />
         {/* pssing events as props to a component */}
         <Button
