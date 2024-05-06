@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+//import logo from "./logo.svg";
 import "./App.css";
 import { Inner } from "./components/Inner";
 import { useState, useEffect } from "react";
@@ -16,9 +16,11 @@ import Css from "./components/Css";
 import States from "./components/States/States";
 import useSandip from "./components/Hooks/useSandip";
 import UseReducer from "./components/UseReducer";
+import Clickcount from "./components/Hoc/Clickcount";
+import Hovercount from "./components/Hoc/Hovercount";
 
 function App() {
-  const [value, setValue] = useState<number>(0);
+  //const [value, setValue] = useState<number>(0);
   const [resp, setResp] = useState<[] | null>([]);
   const [name, setName] = useState<string>("sandip");
 
@@ -94,6 +96,10 @@ function App() {
         </div>
 
         <UseReducer />
+        {/* HOC  start */}
+        <Clickcount />
+        <Hovercount />
+        {/* HOC  end */}
 
         <States />
         {/* pssing events as props to a component */}

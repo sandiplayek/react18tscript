@@ -1,3 +1,4 @@
+//https://react.dev/learn/typescript
 //no issue if the file is renamed and use as All.tsx
 export type names = { fname: string; lname: string };
 
