@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+//https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/class_components/
 type MyState = {
   count: number; // like this
 };
@@ -42,7 +42,6 @@ class ClassComp extends Component<schoolDetailsType3, MyState> {
   }
 
   state: MyState = {
-    // optional second annotation for better type inference
     count: 0,
   };
 
