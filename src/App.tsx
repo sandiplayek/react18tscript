@@ -18,6 +18,8 @@ import useSandip from "./components/Hooks/useSandip";
 import UseReducer from "./components/UseReducer";
 import Clickcount from "./components/Hoc/Clickcount";
 import Hovercount from "./components/Hoc/Hovercount";
+import Context from "./contextApi/Context";
+import ClassComp from "./components/ClassComp";
 
 function App() {
   //const [value, setValue] = useState<number>(0);
@@ -43,6 +45,17 @@ function App() {
     {
       fname: "Arnold",
       lname: "Swatzinacar",
+    },
+  ];
+
+  const classprops = [
+    {
+      schoolName: "kamalpur",
+      rank: 100,
+    },
+    {
+      schoolName: "Keshra",
+      rank: 200,
     },
   ];
 
@@ -100,6 +113,10 @@ function App() {
         <Clickcount />
         <Hovercount />
         {/* HOC  end */}
+
+        <ClassComp schoolDetails={classprops} abc="sandip" />
+
+        <Context />
 
         <States />
         {/* pssing events as props to a component */}

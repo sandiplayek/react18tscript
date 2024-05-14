@@ -17,7 +17,7 @@ const Hovercount = (hocProps: hocProps) => {
 
   return (
     <div style={{ border: "2px solid blue" }}>
-      <h2>Higher Order Count {hocProps.counttt}</h2>
+      <p>Higher Order Count {hocProps.counttt}</p>
       <button onMouseOver={hocProps.handleCounterIncre}>Hover</button>
       <button onMouseOver={hocProps.handleCounterDecre}>Decre</button>
     </div>

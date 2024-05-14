@@ -17,7 +17,7 @@ const Clickcount = (Hocprops: hocProps) => {
 
   return (
     <div style={{ border: "2px solid blue" }}>
-      <h2>Higher Order Count {Hocprops.counttt}</h2>
+      <p>Higher Order Count {Hocprops.counttt}</p>
       <button onClick={Hocprops.handleCounterIncre}>Incre</button>
       <button onClick={Hocprops.handleCounterDecre}>Decre</button>
     </div>
